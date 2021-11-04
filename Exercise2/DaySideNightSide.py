@@ -16,7 +16,7 @@ def planck(L,T):
     Returns:
       Array of spectral density in a given wavelength and a temperature
     '''
-    L = 8.0*1e-6 #convert microns to meters
+    L = L*1e-6 #convert microns to meters
     return 2.*h*(c**2.)/(L**5.)/np.expm1(h*c/(L*boltzmann*T))
 
 
@@ -24,14 +24,15 @@ def planck(L,T):
 
 #possible range of temperature for planets
 Temps_Planet = np.logspace(2,4,1000)  #Goes from 100K to 10000K
-Temp_Star = 5023.0
+Temp_Star = 5023
 Rp_Rs = 0.1504
 
 #Please fill in the following line of code
-FluxStar = planck(8.0, Temp_Star)
-FluxPlanet = planck(8.0, Temps_Planet)
+FluxStar = planck(??, Temp_Star)
+FluxPlanet = planck(??, Temps_Planet)
 
 
+#Why do we multiply by 1e6
 FluxRatio = FluxPlanet/FluxStar*(Rp_Rs)**2*1e6
 
 
