@@ -1,13 +1,8 @@
 
-
 This exercise is to create absortion cross-section of CO2 from using hitran linelists.
 
-Download.py downloads the cross section.
+Make a folder data in terminal--- mkdir data
+First download linelists using Download.py
+and copy CO2.header and CO2.data into this 'data' folder.
 
-Make a folder data--- mkdir data
-
-and copy CO2.header and CO2.data into this folder. Alread done
-
-Now run AbsorptionSpectra.py
-
-Try using different line profile to see how they are different from one another.
+Now run AbsorptionSpectra.py --- It should produce some graph.
