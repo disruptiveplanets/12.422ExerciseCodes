@@ -24,11 +24,13 @@ def planck(L,T):
 
 #possible range of temperature for planets
 Temps_Planet = np.logspace(2,4,1000)  #Goes from 100K to 10000K
+
+#These values are for HD 189733 b
 Temp_Star = 5023
 Rp_Rs = 0.1504
 
-#Please fill in the following line of code
-FluxStar = planck(??, Temp_Star)
+#Please fill in the following line of code. #This calls the planck function at line 11
+FluxStar = planck(??, Temp_Star)      
 FluxPlanet = planck(??, Temps_Planet)
 
 
